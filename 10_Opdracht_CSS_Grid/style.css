@@ -1,0 +1,113 @@
+.grid-container{
+display:grid;
+grid-template-columns: 400px  ;
+grid-template-rows: 100px 500px 300px 100px;
+grid-gap:5px;
+color:white;
+}
+
+
+.site-header {
+    background-color:rgb(101, 169, 247) ;
+    }
+
+.site-main{
+    background-color:rgb(89, 238, 89);
+}
+              
+.widget-area {
+    background-color:rgb(253, 105, 241);
+}    
+
+.site-footer{
+    background-color:rgb(79, 82, 216);
+}
+
+ /*media querie for desktop*/
+@Media screen and (min-width:600px){
+    
+.grid-container{
+    display:grid;
+    grid-template-columns: 300px 300px 300px ;
+    grid-template-rows: 300px 300px 300px 100px ;
+    grid-gap:5px;
+    color:white;
+    }
+    
+.site-header {
+        background-color:rgb(101, 169, 247) ;
+        grid-row-start:1;
+        grid-row-end:5;
+        grid-column-start:1;
+        grid-column-end:2;    
+    }
+
+.site-main{
+        background-color:rgb(89, 238, 89);
+        grid-row-start: 1;
+        grid-row-end: 3;
+        grid-column-start:2;
+        grid-column-end:4;  
+    }
+                
+.widget-area {
+        background-color:rgb(253, 105, 241);
+        grid-row-start:3;
+        grid-row-end:4;
+        grid-column-start:2;
+        grid-column-end:4;  
+    }    
+    
+    .site-footer{
+        background-color:rgb(79, 82, 216);
+        grid-row-start:4;
+        grid-row-end:5;
+        grid-column-start:2;
+        grid-column-end:4;  
+    }
+}
+
+
+/*media querie for desktop*/
+@Media screen and (min-width:1024px){
+    
+    .grid-container{
+        display:grid;
+        grid-template-columns: 250px 250px 250px 250px ;
+        grid-template-rows: 300px  300px 300px 100px ;
+        grid-gap:5px;
+        color:white;
+        }
+        
+    .site-header {
+            background-color:rgb(101, 169, 247) ;
+            grid-row-start:1;
+            grid-row-end:5;
+            grid-column-start:1;
+            grid-column-end:2;    
+        }
+    
+    .site-main{
+            background-color:rgb(89, 238, 89);
+            grid-row-start:1;
+            grid-row-end:4;
+            grid-column-start:2;
+            grid-column-end:4;  
+        }
+                    
+    .widget-area {
+            background-color:rgb(253, 105, 241);
+            grid-row-start:1;
+            grid-row-end:5;
+            grid-column-start:4;
+            grid-column-end:5;  
+        }    
+        
+        .site-footer{
+            background-color:rgb(79, 82, 216);
+            grid-row-start:4;
+            grid-row-end:5;
+            grid-column-start:2;
+            grid-column-end:4;  
+        }
+    }
